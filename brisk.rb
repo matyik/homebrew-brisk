@@ -5,20 +5,20 @@
 class Brisk < Formula
   desc "Ultra-lightweight JavaScript edge runtime."
   homepage "https://brisk.js.org"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/matyik/brisk/releases/download/v0.1.0/brisk_0.1.0_darwin_amd64.tar.gz"
-      sha256 "c4274e0f676e4ccea787b453d97dc9999f712734bb60b1d043ef0633085c7804"
+      url "https://github.com/matyik/brisk/releases/download/v0.1.1/brisk_0.1.1_darwin_amd64.tar.gz"
+      sha256 "a9ad6b25b8706ec9929a100d5f7d43c380cf2fa70d7c7871100665d6393b434f"
 
       def install
         bin.install "brisk"
       end
     end
     on_arm do
-      url "https://github.com/matyik/brisk/releases/download/v0.1.0/brisk_0.1.0_darwin_arm64.tar.gz"
-      sha256 "5c33cb2075ef51789876ac093c78fd765a9c3391244ea4829cb3458a8a81b43d"
+      url "https://github.com/matyik/brisk/releases/download/v0.1.1/brisk_0.1.1_darwin_arm64.tar.gz"
+      sha256 "5baff65d619c2e9b7201c951eb90960c876007723b11247b0b5168cf725b63b9"
 
       def install
         bin.install "brisk"
@@ -29,8 +29,8 @@ class Brisk < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/matyik/brisk/releases/download/v0.1.0/brisk_0.1.0_linux_amd64.tar.gz"
-        sha256 "cd96d1c1051a918681ead926055549f2b2d93cd8f45a805baafef821032490a7"
+        url "https://github.com/matyik/brisk/releases/download/v0.1.1/brisk_0.1.1_linux_amd64.tar.gz"
+        sha256 "7b7f874d1c53cf4f62ac927f05c8015e3dfdd8d47f9eafb5db1897867c05c97b"
 
         def install
           bin.install "brisk"
@@ -39,8 +39,8 @@ class Brisk < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/matyik/brisk/releases/download/v0.1.0/brisk_0.1.0_linux_arm64.tar.gz"
-        sha256 "ba8814b80dec0c4f5228e134aa461d764e2d08bdc80e7b1514ab0f24f1460efd"
+        url "https://github.com/matyik/brisk/releases/download/v0.1.1/brisk_0.1.1_linux_arm64.tar.gz"
+        sha256 "5cf7f29e93e58ad1d68f8e8f844cfe2a65af1bff9ee197e45b2693d8895c61a2"
 
         def install
           bin.install "brisk"
